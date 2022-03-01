@@ -10,4 +10,18 @@ public class Controller {
         return "index";
     }
 
+    @GetMapping("/forretning")
+    public String forretning(){
+        return "forretning";
+    }
+
+    @GetMapping("/fakta")
+    public String fakta(){
+        return "fakta";
+    }
+
+    @GetMapping("/mindremadspild")
+    public String mindremadspild(){
+        return "mindremadspild";
+    }
 }

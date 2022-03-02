@@ -1,7 +1,10 @@
 <!DOCTYPE html>
+<html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+
     <title>Fakta</title>
     <style>
         /* Style the header with a grey background and some padding */
@@ -45,6 +48,50 @@
         .header-right {
             float: right;
         }
+
+        .container {
+            padding: 64px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both
+        }
+
+        .column-66 {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .column-33 {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .large-title {
+            font-size: 48px;
+        }
+
+        .xlarge-title {
+            font-size: 64px
+        }
+
+        body {
+            margin: 20px;
+        }
+
+        @media screen and (max-width: 1000px) {
+            .column-66,
+            .column-33 {
+                width: 100%;
+                text-align: center;
+            }
+            img {
+                margin: auto;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -56,6 +103,21 @@
         <a href="/forretning">Forretning</a>
         <a href="/fakta">Fakta</a>
         <a class= "lit" href="/mindremadspild">Mindre mad(spild)</a>
+    </div>
+</div>
+
+<!-- Section to the left -->
+<div class="container" style="background-color:#C8A2C8">
+    <div class="row">
+        <div class="column-66">
+            <h1 class="xlarge-title"><b>Fakta om madspild</b></h1>
+            <h1 class="large-title" style="color:Red;"><b>727.000 TON</b></h1>
+            <p><span style="font-size:36px">Er mængden af madspild i den danske servicesektor PR. ÅR.</span> For at sammenligne er det samlede madspild i alle husstande 261.000-ton pr. år. Hvilket er et seriøst problem i den danske kultur. Problemet ved madspild er at man skal gøre sig et aktivt forsøg på at overveje hvorvidt det man smider ud i skraldespanden egentligt godt kunne spises stadig. Dette gælder for mad man smider ud fordi man er lidt træt af det, men også for den mad der "for gammel", altså udløbet bedst før datoen. </p>
+
+        </div>
+        <div class="column-33">
+            <img src="graf1.png"  alt="Graf">
+        </div>
     </div>
 </div>
 

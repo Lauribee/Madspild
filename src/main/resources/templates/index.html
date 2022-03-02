@@ -45,31 +45,42 @@
         .header-right {
             float: right;
         }
-        .introduction{
+        .introduction {
             background-color: #C8A2C8;
-            width: 70%;
-
+            width: 60%;
             margin: auto;
             padding-bottom: 3000px;
             padding-top: 25px;
             text-align: center;
-            ;
+            position: absolute;
+            z-index: 999;
+            left: 0;
+            right: 0;
+            top: 59%;
+            font-family: Arial,sans-serif;
+        }
+        #statistics {
+            z-index: -1;
         }
 
-        .big-title{
+        .big-title {
             font-size: xxx-large;
             text-transform: uppercase;
         }
 
-        .small-title{
+        .small-title {
             font-size: large;
             text-transform: uppercase;
-            text-align: justify;
         }
 
         .container {
             position: relative;
             font-family: sans-serif;
+            display: inline-block;
+        }
+        .quote {
+            font-style: italic;
+            color: grey;
         }
     </style>
 </head>
@@ -86,8 +97,8 @@
 </div>
 <div class="container">
     <img src="ShrekApproved.jpg" alt="Food" style="width:100%;">
+    <img id=statistics src=https://thumbs.dreamstime.com/b/greek-food-background-traditional-different-greek-dishes-set-greek-food-background-traditional-different-greek-dishes-set-top-view-178761927.jpg" alt="food" style="width: 100%;">
     <div class="introduction">
-
     <h1 class="big-title">
         Fakta om
         <br>
@@ -98,9 +109,29 @@
         <h2 class="small-title">
             227.000-ton
         </h2>
-    <p>
-        Er mængden af madspild i den danske servicesektor PR. ÅR.
-    </p>
+            <p>
+                Er mængden af madspild i den danske servicesektor PR. ÅR.
+            </p>
+            <p>
+                For at sammenligne er det samlede madspild i alle husstande 261.000-ton pr. år.
+                Hvilket er et seriøst problem i den danske kultur. Problemet ved madspild er at man skal
+                gøre sig et aktivt forsøg på at overveje hvorvidt det man smider ud i skraldespanden egentligt
+                godt kunne spises stadig. Dette gælder for mad man smider ud fordi man er lidt træt af det, men
+                også for den mad der "for gammel", altså udløbet bedst før datoen.
+            </p>
+        <h2 class="small-title">
+            Hvad er madspild egentligt?
+        </h2>
+            <p>
+                Definitionen af madspild på den danske ordbog lyder sådan her:
+            </p>
+            <p class="quote">
+                "det at spiselige madvarer kasseres under produktionen, i butikkerne eller i husholdningerne"
+            </p>
+            <p>
+                Hvilket fortalt på en simplere måde, er det spiselige, som vi smider ud enten under
+                produktion, altså, fabrikkerne, i butikker eller hjemme hos os selv
+            </p>
 
 
 

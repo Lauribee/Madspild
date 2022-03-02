@@ -7,74 +7,9 @@
 
     <title>👽💩✨🍆💦 </title>
 
-
-    <!--ALL CONTENT-->
-    <body>
-
-    <!-- NAVIGATION-->
-    <!-- Vi starter med at lave en navigation bar til vores index side, hvor vi assigner div til klassen
-     "header" som den del der skal være i venstre side af headeren-->
-    <div class="header">
-        <a href="/" class="home">🏠</a>
-        <div class="header-right">
-            <a href="/forretning">Forretning</a>
-            <a href="/fakta">Fakta</a>
-            <a class= "lit" href="/mindremadspild">Mindre mad(spild)</a>
-        </div>
-    </div>
-
-    <div class="container">
-        <img src="ShrekApproved.jpg" alt="Food" style="width:100%;">
-        <img class=picture-of-food src=https://thumbs.dreamstime.com/b/greek-food-background-traditional-different-greek-dishes-set-greek-food-background-traditional-different-greek-dishes-set-top-view-178761927.jpg" alt="food" style="width: 100%;">
-        <img class=picture-of-food src=https://thumbs.dreamstime.com/b/greek-food-background-traditional-different-greek-dishes-set-greek-food-background-traditional-different-greek-dishes-set-top-view-178761927.jpg" alt="food" style="width: 100%;">
-        <img class=picture-of-food src=https://thumbs.dreamstime.com/b/greek-food-background-traditional-different-greek-dishes-set-greek-food-background-traditional-different-greek-dishes-set-top-view-178761927.jpg" alt="food" style="width: 100%;">
-        <div class="introduction">
-            <h1 class="big-title">
-                Fakta om
-                <br>
-                madspild
-            </h1>
-
-
-            <h2 class="small-title">
-                227.000-ton
-            </h2>
-            <p>
-                Er mængden af madspild i den danske servicesektor PR. ÅR.
-            </p>
-            <p>
-                For at sammenligne er det samlede madspild i alle husstande 261.000-ton pr. år.
-                Hvilket er et seriøst problem i den danske kultur. Problemet ved madspild er at man skal
-                gøre sig et aktivt forsøg på at overveje hvorvidt det man smider ud i skraldespanden egentligt
-                godt kunne spises stadig. Dette gælder for mad man smider ud fordi man er lidt træt af det, men
-                også for den mad der "for gammel", altså udløbet bedst før datoen.
-            </p>
-            <h2 class="small-title">
-                Hvad er madspild egentligt?
-            </h2>
-            <p>
-                Definitionen af madspild på den danske ordbog lyder sådan her:
-            </p>
-            <p class="quote">
-                "det at spiselige madvarer kasseres under produktionen, i butikkerne eller i husholdningerne"
-            </p>
-            <p>
-                Hvilket fortalt på en simplere måde, er det spiselige, som vi smider ud enten under
-                produktion, altså, fabrikkerne, i butikker eller hjemme hos os selv. Fokusset ligger
-                på det, at madvarerne der bliver spist ud, er spiselige.
-
-            </p>
-
-
-
-
-        </div>
-    </div>
-    </body>
-    <!--CONTENT END-->
-
     <!--CSS delen hvor vi styler text-->
     <style>
+
         /* Giver en lilla baggrund til headeren og tilføjer "padding" */
         .header {
             overflow: hidden;
@@ -145,15 +80,147 @@
         }
 
         .container {
-            position: relative;
-            font-family: sans-serif;
-            display: inline-block;
+            padding: 64px;
         }
         .quote {
             font-style: italic;
             color: grey;
         }
+
+        * {
+            box-sizing:border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both
+        }
+
+        .column-66 {
+            float: left;
+            width: 66.66666%;
+            padding: 20px;
+        }
+
+        .column-33 {
+            float: left;
+            width: 33.33333%;
+            padding: 20px;
+        }
+
+        .large-title {
+            font-size: 48px;
+        }
+
+        .xlarge-title {
+            font-size: 64px
+        }
+
+        .button {
+            border: none;
+            color: white;
+            padding: 14px 28px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: purple;
+        }
+
+        img {
+            display: block;
+            height: auto;
+            max-width: 100%;
+        }
+
+        @media screen and (max-width: 1000px) {
+            .column-66,
+            .column-33 {
+                width: 100%;
+                text-align: center;
+            }
+            img {
+                margin: auto;
+            }
+        }
     </style>
+
+    <!--ALL CONTENT-->
+    <body>
+
+    <!-- NAVIGATION-->
+    <!-- Vi starter med at lave en navigation bar til vores index side, hvor vi assigner div til klassen
+     "header" som den del der skal være i venstre side af headeren-->
+    <div class="header">
+        <a href="/" class="home">🏠</a>
+        <div class="header-right">
+            <a href="/forretning">Forretning</a>
+            <a href="/fakta">Fakta</a>
+            <a class= "lit" href="/mindremadspild">Mindre mad(spild)</a>
+        </div>
+    </div>
+
+    <!--FRONT PAGE-->
+    <section>
+        <img class="myFrontPage"
+             src="ShrekApproved.jpg"
+             style="width: 100%">
+    </section>
+
+    <!-- Section to the left -->
+    <div class="container" style="background-color:#C8A2C8">
+        <div class="row">
+            <div class="column-66">
+                <h1 class="xlarge-title"><b>Fakta om madspild</b></h1>
+                <h1 class="large-title" style="color:Red;"><b>727.000 TON</b></h1>
+                <p><span style="font-size:36px">Er mængden af madspild i den danske servicesektor PR. ÅR.</span> For at sammenligne er det samlede madspild i alle husstande 261.000-ton pr. år. Hvilket er et seriøst problem i den danske kultur. Problemet ved madspild er at man skal gøre sig et aktivt forsøg på at overveje hvorvidt det man smider ud i skraldespanden egentligt godt kunne spises stadig. Dette gælder for mad man smider ud fordi man er lidt træt af det, men også for den mad der "for gammel", altså udløbet bedst før datoen. </p>
+
+                <a class="button" href="/fakta">Læs mere</a>
+            </div>
+            <div class="column-33">
+                <img src="graf1.png"  alt="Graf">
+            </div>
+        </div>
+    </div>
+
+    <!-- Section to the right -->
+    <div class="container" style="background-color:#C8A2C8">
+        <div class="row">
+            <div class="column-33">
+                <img src="forretning.png" alt="billede">
+            </div>
+            <div class="column-66">
+                <h1 class="xlarge-title"><b>Ønsker du at blive en del af vores movement?</b></h1>
+                <h1 class="large-title" style="color:red;"><b>79 Forretninger er en del af det!</b></h1>
+                <p><span style="font-size:24px">Du kan være med lige nu!</span> Er du leder af en eller ejer du en forretning? Hvis ja, så kan du være med til at reducere madspild lige nu og her med vores nye "Tilmeld din forretning" program. Du kan blive en del af teamet, som allerede har 79 forretninger som en del af sig. Det betyder at dine varer vil blive markerede, og derfor nemmere at holde styr på, og reducere spilden!</p>
+                <a class="button" style="background-color:purple">Tilmeld</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- https://www.w3schools.com/howto/howto_css_zig_zag_layout.asp -->
+    <!-- The section to the left -->
+    <div class="container" style="background-color:#C8A2C8">
+        <div class="row">
+            <div class="column-66">
+                <h1 class="xlarge-title"><b>Vores movement</b></h1>
+                <h1 class="large-title" style="color:red;"><b>Mindre mad(spild)</b></h1>
+                <p><span style="font-size:36px">Hvad er det?</span> I 44 procent af de danske husstande bor der kun én voksen, og langt flere bor alene end for 30 år siden. Mange af de varer der bliver solgt, isæt kød, bliver solgt i mængder som gør det nemt for familier at få en lækker aftensmad for alle. Men når man bor alene, har man jo ikke brug for 300 g kylling til en lille wok nudel ret.</p>
+                <a class="button">Læs mere</a>
+            </div>
+            <div class="column-33">
+                <img src="kylling%20med%20x.jpg" alt="billede af kylling">
+            </div>
+        </div>
+    </div>
+
+    </body>
+    <!--CONTENT END-->
+
 </head>
 
 </html>

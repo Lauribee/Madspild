@@ -50,6 +50,42 @@
         .header-right {
             float: right;
         }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both
+        }
+
+        .column-66 {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .column-33 {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .large-title {
+            font-size: 48px;
+        }
+
+        .xlarge-title {
+            font-size: 64px
+        }
+
+        @media screen and (max-width: 1000px) {
+            .column-66,
+            .column-33 {
+                width: 100%;
+                text-align: center;
+            }
+            img {
+                margin: auto;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -63,26 +99,53 @@
         <a class= "lit" href="/mindremadspild">Mindre mad(spild)</a>
     </div>
 </div>
+<!-- Middle section -->
+<div class="container" style="background-color:#C8A2C8">
+    <div class="row">
+        <div class="column-66">
+            <h1 class="xlarge-title"><b>Fakta om madspild</b></h1>
+            <p>Hvad er madspild egentligt?</p>
+            <p>Definitionen af madspild i den danske ordbog lyder sådan her:</p>
 
+            <p style="font-style: italic">"det at spiselige madvarer kasseres under produktionen, i butikkerne eller i husholdningerne"</p>
 
-
-<!--
-                Hvad er madspild egentligt?
-            </h2>
-            <p>
-                Definitionen af madspild på den danske ordbog lyder sådan her:
-            </p>
-            <p class="quote">
-                "det at spiselige madvarer kasseres under produktionen, i butikkerne eller i husholdningerne"
-            </p>
-            <p>
-                Hvilket fortalt på en simplere måde, er det spiselige, som vi smider ud enten under
+            <p>Hvilket fortalt på en simplere måde, er det spiselige, som vi smider ud enten under
                 produktion, altså, fabrikkerne, i butikker eller hjemme hos os selv. Fokusset ligger
-                på det, at madvarerne der bliver spist ud, er spiselige.
+                på det, at madvarerne der bliver spist ud, er spiselige.</p>
 
-            </p>
+            <h1 class="large-title"><b>Hvordan formindsker DU madspild?</b></h1>
 
-            -->
+            <p>Som forbruger:</p>
+
+            <p><b> - Planlæg dine madindkøb, og køb kun den mad, der er behov for.</b></p>
+
+            <p><b> - Spis lokale produkter, så skal de ikke holde sig længe under transport.</b></p>
+
+            <p><b> - Bliv bedre til at bruge rester i nye retter, men hold stadig øje med holdbarheden.</b></p>
+
+            <p><b> - Opbevar maden ved den rigtige temperatur, så du smider mindre mad ud, der er blevet dårlig.</b></p>
+
+            <p><b> - Køl madrester, der skal gemmes, hurtigt ned, eller frys dem evt. i små pakker.</b></p>
+
+            <p>Som virksomhed:</p>
+
+            <p><b>DONER DONER DONER.</b></p>
+
+            <p>Selvfølgelig skal maden ikke kunne skade dem der spiser det, men det er lige præcis problemet med
+            store dele af madvarer der bliver smidt ud; det kan stadig spises og meget af det er stadigt holdbart.
+             Det handler bare om at donerer den mad til folk der har brug for det, i stedet for at smide det ud.
+            Hjemløse og andre der ikke har en stabil økonomi kunne komme langt med donationer fra supermarkeder
+            eller lignende som normalt bare smider deres produkter ud.</p>
+
+        </div>
+        <div class="column-33">
+            <img src="waste.png"  alt="Graf">
+        </div>
+    </div>
+</div>
+
+
+
 
 </body>
 </html>

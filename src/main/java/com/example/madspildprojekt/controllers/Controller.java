@@ -24,4 +24,9 @@ public class Controller {
     public String mindremadspild(){
         return "mindremadspild";
     }
+
+    @GetMapping("/TC")
+    public String TC(){
+        return "TC";
+    }
 }

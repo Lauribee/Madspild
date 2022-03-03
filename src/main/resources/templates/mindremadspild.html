@@ -8,12 +8,61 @@
     <meta charset="UTF-8">
     <title>Mindre mad (spild)</title>
     <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both
+        }
+
+        .column-66 {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .column-33 {
+            text-align: center;
+            padding: 20px;
+        }
+
+
+        .large-title {
+            font-size: 48px;
+        }
+
+        .xlarge-title {
+            font-size: 64px
+        }
+
+
+        img {
+            display: block;
+            height: auto;
+            max-width: 100%;
+        }
+
+        @media screen and (max-width: 1000px) {
+            .column-66,
+            .column-33 {
+                width: 100%;
+                text-align: center;
+            }
+            img {
+                margin: auto;
+            }
+        }
+
         /* Giver en lilla baggrund til headeren og tilføjer "padding" */
         .header {
             overflow: hidden;
             background-color: rebeccapurple;
             padding: 20px 10px;
-            font-family: "Comic Sans MS";
+            font-family: "Comic Sans MS",serif;
         }
 
         /* Style the header links */
@@ -60,6 +109,36 @@
         <a href="/forretning">Forretning</a>
         <a href="/fakta">Fakta</a>
         <a class= "lit" style="border-style: dashed" href="/mindremadspild">Mindre mad(spild)</a>
+    </div>
+</div>
+
+<!-- Middle section -->
+<div class="container" style="background-color:#C8A2C8">
+    <div class="row">
+        <div class="column-66">
+            <h1 class="xlarge-title"><b>Mindre mad(spild)</b></h1>
+            <h1 class="large-title"><b>Vores oplevelse</b></h1>
+
+            <p>Vi er to studerende på Københavns Erhvervsakademi, og hver dag efter skole, kommer vi hjem og skal til at finde ud af hvad vi skal have til aftensmad. Normalt så plejer vi at lave tomændsretter, såsom pasta eller ris, eller salat. Men nogle gange laver vi mad i overskud, men ikke nok til at det skal blive rester til dagen efter.</p>
+            
+            <p> Det vi nok oplever mest er, at kødet som man køber i supermarkedet er lige præcis for meget til to personer. Det mindste pakke kylling der findes er 300 g. Hvorfor ikke 200g? Vi ender bare altid med, at der er fem skefulde af rester tilovers. Det kan man altså ikke gøre så meget med. Det samme gælder ofte for grøntsager...</p>
+
+            <p> De fleste butikker støtter ikke længere vej selv grøntsager. Derfor, hvis du en dag skal lave spaghetti med kødsovs, skal du altså købe et næt med 1,5 kg løg, når du i virkeligheden kun skal bruge to løg.</p>
+            
+            <p> Dette ser VI som et stort faktor i madspilden i dag, og vi vil derfor indføre vores movement i alle de store butikker, og gøre verden bedre!</p>
+            
+            
+            <h1 class="large-title"><b>Vores ide med mindre mad(spild)</b></h1>
+            
+            <p>Vores ide med madspild er at indføre vej selv grønt igen i alle de store og små forretninger, og noget helt nyt, som ikke er blevet set i Danmark før!</p>
+            <h1> Nemlig, de nye 1 personers kødpakker som kun indeholder 100g af det respektive kød!</h1>
+            
+            <p>Kommer dette til at være enden på madspild?? DET HÅBER VI!!!</p>
+
+        </div>
+        <div class="column-33">
+            <img src="../static/ShrekApproved.jpg" alt="shrekapproved">
+        </div>
     </div>
 </div>
 
